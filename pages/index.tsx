@@ -1,7 +1,6 @@
 import Box from "@src/components/Box";
-import theme from "@src/theme";
+import theme from "@src/theme/theme";
 import styled from "styled-components"
-
 
 const Cafe = styled.div`
   color: purple;
@@ -13,11 +12,17 @@ export default function HomeScreen(){
       tag="main"
       styleSheet={{
         fontFamily: theme.typography.fontFamily,
+        backgroundColor: {
+          xs: 'red',
+          md: 'blue',
+          sm: 'green',
+          xl: 'yellow',
+        }
       }}
     > 
-    <Cafe>
-      tchau!
-    </Cafe>
+      <Cafe>
+        tchau!
+      </Cafe>
     </Box>
   )
 }
